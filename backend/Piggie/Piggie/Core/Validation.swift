@@ -57,48 +57,6 @@ class Validator {
         return ValidationResult(isValid: true, errorMessage: nil)
     }
     
-    func validateSchool(_ school: String) -> ValidationResult {
-        if school.isEmpty {
-            return ValidationResult(isValid: false, errorMessage: "School is required")
-        }
-        
-        let trimmed = school.trimmingCharacters(in: .whitespaces)
-        
-        if trimmed.count < 2 {
-            return ValidationResult(isValid: false, errorMessage: "School name must be at least 2 characters")
-        }
-        
-        if trimmed.count > 60 {
-            return ValidationResult(isValid: false, errorMessage: "School name must be no more than 60 characters")
-        }
-        
-        return ValidationResult(isValid: true, errorMessage: nil)
-    }
-    
-    func validateGradYear(_ year: Int) -> ValidationResult {
-        let currentYear = Calendar.current.component(.year, from: Date())
-        let minYear = currentYear - 10
-        let maxYear = currentYear + 10
-        
-        if year < minYear || year > maxYear {
-            return ValidationResult(isValid: false, errorMessage: "Graduation year must be between \(minYear) and \(maxYear)")
-        }
-        
-        return ValidationResult(isValid: true, errorMessage: nil)
-    }
-    
-    func validateMonthlyGoal(_ amount: Double) -> ValidationResult {
-        if amount < 0 {
-            return ValidationResult(isValid: false, errorMessage: "Monthly goal must be positive")
-        }
-        
-        if amount > 5000 {
-            return ValidationResult(isValid: false, errorMessage: "Monthly goal cannot exceed $5,000")
-        }
-        
-        return ValidationResult(isValid: true, errorMessage: nil)
-    }
-    
     func validatePassword(_ password: String) -> ValidationResult {
         if password.isEmpty {
             return ValidationResult(isValid: false, errorMessage: "Password is required")
@@ -141,3 +99,4 @@ class Validator {
         return ValidationResult(isValid: true, errorMessage: nil)
     }
 }
+

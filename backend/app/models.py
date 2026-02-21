@@ -133,5 +133,5 @@ class Event(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_public_id = Column(String, nullable=False)
     event_type = Column(String, nullable=False)  # prompt_shown, prompt_accepted, etc.
-    metadata = Column(Text)  # JSON string
+    event_metadata = Column(Text)  # JSON string
     created_at = Column(DateTime(timezone=True), server_default=func.now())

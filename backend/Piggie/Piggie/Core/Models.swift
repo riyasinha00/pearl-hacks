@@ -6,17 +6,11 @@ final class UserProfile {
     var publicId: String
     var email: String
     var name: String
-    var school: String
-    var gradYear: Int
-    var monthlyGoalCents: Int
     
-    init(publicId: String, email: String, name: String, school: String, gradYear: Int, monthlyGoalCents: Int) {
+    init(publicId: String, email: String, name: String) {
         self.publicId = publicId
         self.email = email
         self.name = name
-        self.school = school
-        self.gradYear = gradYear
-        self.monthlyGoalCents = monthlyGoalCents
     }
 }
 
@@ -154,3 +148,4 @@ struct PortfolioSummary: Decodable {
     let today_return_cents: Int
     let today_return_percent: Double
 }
+

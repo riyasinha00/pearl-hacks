@@ -18,7 +18,7 @@ def create_event(
     event = Event(
         user_public_id=current_user.public_id,
         event_type=event_data.event_type,
-        metadata=event_data.metadata
+        event_metadata=event_data.metadata
     )
     db.add(event)
     db.commit()

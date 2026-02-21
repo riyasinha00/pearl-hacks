@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A702B7C2F4A5E1F0020EBE7 /* PiggieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A702B7B2F4A5E1E0020EBE7 /* PiggieApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A702B5F2F4A5D8B0020EBE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A702B472F4A5D8A0020EBE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A702B4E2F4A5D8A0020EBE7;
+			remoteInfo = Piggie;
+		};
+		3A702B692F4A5D8B0020EBE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A702B472F4A5D8A0020EBE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A702B4E2F4A5D8A0020EBE7;
+			remoteInfo = Piggie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A702B4F2F4A5D8A0020EBE7 /* Piggie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piggie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A702B5E2F4A5D8B0020EBE7 /* PiggieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiggieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A702B682F4A5D8B0020EBE7 /* PiggieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiggieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A702B7B2F4A5E1E0020EBE7 /* PiggieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggieApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3A702B512F4A5D8A0020EBE7 /* Piggie */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Piggie;
+			sourceTree = "<group>";
+		};
+		3A702B612F4A5D8B0020EBE7 /* PiggieTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PiggieTests;
+			sourceTree = "<group>";
+		};
+		3A702B6B2F4A5D8B0020EBE7 /* PiggieUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PiggieUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A702B4C2F4A5D8A0020EBE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A702B5B2F4A5D8B0020EBE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A702B652F4A5D8B0020EBE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A702B462F4A5D8A0020EBE7 = {
+			isa = PBXGroup;
+			children = (
+				3A702B7B2F4A5E1E0020EBE7 /* PiggieApp.swift */,
+				3A702B512F4A5D8A0020EBE7 /* Piggie */,
+				3A702B612F4A5D8B0020EBE7 /* PiggieTests */,
+				3A702B6B2F4A5D8B0020EBE7 /* PiggieUITests */,
+				3A702B502F4A5D8A0020EBE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A702B502F4A5D8A0020EBE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A702B4F2F4A5D8A0020EBE7 /* Piggie.app */,
+				3A702B5E2F4A5D8B0020EBE7 /* PiggieTests.xctest */,
+				3A702B682F4A5D8B0020EBE7 /* PiggieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A702B4E2F4A5D8A0020EBE7 /* Piggie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A702B722F4A5D8B0020EBE7 /* Build configuration list for PBXNativeTarget "Piggie" */;
+			buildPhases = (
+				3A702B4B2F4A5D8A0020EBE7 /* Sources */,
+				3A702B4C2F4A5D8A0020EBE7 /* Frameworks */,
+				3A702B4D2F4A5D8A0020EBE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3A702B512F4A5D8A0020EBE7 /* Piggie */,
+			);
+			name = Piggie;
+			packageProductDependencies = (
+			);
+			productName = Piggie;
+			productReference = 3A702B4F2F4A5D8A0020EBE7 /* Piggie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A702B5D2F4A5D8B0020EBE7 /* PiggieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A702B752F4A5D8B0020EBE7 /* Build configuration list for PBXNativeTarget "PiggieTests" */;
+			buildPhases = (
+				3A702B5A2F4A5D8B0020EBE7 /* Sources */,
+				3A702B5B2F4A5D8B0020EBE7 /* Frameworks */,
+				3A702B5C2F4A5D8B0020EBE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A702B602F4A5D8B0020EBE7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3A702B612F4A5D8B0020EBE7 /* PiggieTests */,
+			);
+			name = PiggieTests;
+			packageProductDependencies = (
+			);
+			productName = PiggieTests;
+			productReference = 3A702B5E2F4A5D8B0020EBE7 /* PiggieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A702B672F4A5D8B0020EBE7 /* PiggieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A702B782F4A5D8B0020EBE7 /* Build configuration list for PBXNativeTarget "PiggieUITests" */;
+			buildPhases = (
+				3A702B642F4A5D8B0020EBE7 /* Sources */,
+				3A702B652F4A5D8B0020EBE7 /* Frameworks */,
+				3A702B662F4A5D8B0020EBE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A702B6A2F4A5D8B0020EBE7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3A702B6B2F4A5D8B0020EBE7 /* PiggieUITests */,
+			);
+			name = PiggieUITests;
+			packageProductDependencies = (
+			);
+			productName = PiggieUITests;
+			productReference = 3A702B682F4A5D8B0020EBE7 /* PiggieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A702B472F4A5D8A0020EBE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					3A702B4E2F4A5D8A0020EBE7 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					3A702B5D2F4A5D8B0020EBE7 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 3A702B4E2F4A5D8A0020EBE7;
+					};
+					3A702B672F4A5D8B0020EBE7 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 3A702B4E2F4A5D8A0020EBE7;
+					};
+				};
+			};
+			buildConfigurationList = 3A702B4A2F4A5D8A0020EBE7 /* Build configuration list for PBXProject "Piggie" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A702B462F4A5D8A0020EBE7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3A702B502F4A5D8A0020EBE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A702B4E2F4A5D8A0020EBE7 /* Piggie */,
+				3A702B5D2F4A5D8B0020EBE7 /* PiggieTests */,
+				3A702B672F4A5D8B0020EBE7 /* PiggieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A702B4D2F4A5D8A0020EBE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A702B5C2F4A5D8B0020EBE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A702B662F4A5D8B0020EBE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A702B4B2F4A5D8A0020EBE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A702B7C2F4A5E1F0020EBE7 /* PiggieApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A702B5A2F4A5D8B0020EBE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A702B642F4A5D8B0020EBE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A702B602F4A5D8B0020EBE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A702B4E2F4A5D8A0020EBE7 /* Piggie */;
+			targetProxy = 3A702B5F2F4A5D8B0020EBE7 /* PBXContainerItemProxy */;
+		};
+		3A702B6A2F4A5D8B0020EBE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A702B4E2F4A5D8A0020EBE7 /* Piggie */;
+			targetProxy = 3A702B692F4A5D8B0020EBE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3A702B702F4A5D8B0020EBE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A702B712F4A5D8B0020EBE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A702B732F4A5D8B0020EBE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = riya.Piggie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A702B742F4A5D8B0020EBE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = riya.Piggie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A702B762F4A5D8B0020EBE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = riya.PiggieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Piggie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Piggie";
+			};
+			name = Debug;
+		};
+		3A702B772F4A5D8B0020EBE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = riya.PiggieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Piggie.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Piggie";
+			};
+			name = Release;
+		};
+		3A702B792F4A5D8B0020EBE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = riya.PiggieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Piggie;
+			};
+			name = Debug;
+		};
+		3A702B7A2F4A5D8B0020EBE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = riya.PiggieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Piggie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A702B4A2F4A5D8A0020EBE7 /* Build configuration list for PBXProject "Piggie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A702B702F4A5D8B0020EBE7 /* Debug */,
+				3A702B712F4A5D8B0020EBE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A702B722F4A5D8B0020EBE7 /* Build configuration list for PBXNativeTarget "Piggie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A702B732F4A5D8B0020EBE7 /* Debug */,
+				3A702B742F4A5D8B0020EBE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A702B752F4A5D8B0020EBE7 /* Build configuration list for PBXNativeTarget "PiggieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A702B762F4A5D8B0020EBE7 /* Debug */,
+				3A702B772F4A5D8B0020EBE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A702B782F4A5D8B0020EBE7 /* Build configuration list for PBXNativeTarget "PiggieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A702B792F4A5D8B0020EBE7 /* Debug */,
+				3A702B7A2F4A5D8B0020EBE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A702B472F4A5D8A0020EBE7 /* Project object */;
+}

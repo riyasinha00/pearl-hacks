@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 import SwiftData
 
 class TransactionManager: ObservableObject {
@@ -48,9 +49,9 @@ class TransactionManager: ObservableObject {
         guard let context = modelContext else { return }
         
         for txn in transactions {
-            // Check if already cached
+            let id = txn.transaction_id
             let descriptor = FetchDescriptor<CachedTransaction>(
-                predicate: #Predicate { $0.transactionId == txn.transaction_id }
+                predicate: #Predicate<CachedTransaction> { $0.transactionId == id }
             )
             
             if let existing = try? context.fetch(descriptor).first {
@@ -79,3 +80,4 @@ class TransactionManager: ObservableObject {
         try? context.save()
     }
 }
+

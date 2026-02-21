@@ -5,16 +5,10 @@ struct SignUpView: View {
     @State private var name = ""
     @State private var email = ""
     @State private var password = ""
-    @State private var school = ""
-    @State private var gradYear = Calendar.current.component(.year, from: Date())
-    @State private var monthlyGoal: Double = 100
     
     @State private var nameError: String?
     @State private var emailError: String?
     @State private var passwordError: String?
-    @State private var schoolError: String?
-    @State private var gradYearError: String?
-    @State private var monthlyGoalError: String?
     
     @State private var isLoading = false
     @State private var errorMessage: String?
@@ -81,64 +75,6 @@ struct SignUpView: View {
                     }
                 }
                 
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("School")
-                        .font(.headline)
-                        .foregroundColor(.piggieText)
-                    
-                    TextField("Enter your school", text: $school)
-                        .textFieldStyle(PiggieTextFieldStyle())
-                        .onChange(of: school) { _ in
-                            validateSchool()
-                        }
-                    
-                    if let error = schoolError {
-                        Text(error)
-                            .font(.caption)
-                            .foregroundColor(.red)
-                    }
-                }
-                
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Graduation Year")
-                        .font(.headline)
-                        .foregroundColor(.piggieText)
-                    
-                    Picker("Graduation Year", selection: $gradYear) {
-                        ForEach(availableGradYears, id: \.self) { year in
-                            Text("\(year)").tag(year)
-                        }
-                    }
-                    .pickerStyle(.menu)
-                    .onChange(of: gradYear) { _ in
-                        validateGradYear()
-                    }
-                    
-                    if let error = gradYearError {
-                        Text(error)
-                            .font(.caption)
-                            .foregroundColor(.red)
-                    }
-                }
-                
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Monthly Goal: $\(Int(monthlyGoal))")
-                        .font(.headline)
-                        .foregroundColor(.piggieText)
-                    
-                    Slider(value: $monthlyGoal, in: 0...5000, step: 10)
-                        .tint(.piggieSage)
-                        .onChange(of: monthlyGoal) { _ in
-                            validateMonthlyGoal()
-                        }
-                    
-                    if let error = monthlyGoalError {
-                        Text(error)
-                            .font(.caption)
-                            .foregroundColor(.red)
-                    }
-                }
-                
                 if let error = errorMessage {
                     Text(error)
                         .font(.caption)
@@ -162,15 +98,9 @@ struct SignUpView: View {
         }
     }
     
-    private var availableGradYears: [Int] {
-        let currentYear = Calendar.current.component(.year, from: Date())
-        return Array((currentYear - 10)...(currentYear + 10))
-    }
-    
     private var isFormValid: Bool {
         nameError == nil && emailError == nil && passwordError == nil &&
-        schoolError == nil && gradYearError == nil && monthlyGoalError == nil &&
-        !name.isEmpty && !email.isEmpty && !password.isEmpty && !school.isEmpty
+        !name.isEmpty && !email.isEmpty && !password.isEmpty
     }
     
     private func validateName() {
@@ -188,21 +118,6 @@ struct SignUpView: View {
         passwordError = result.isValid ? nil : result.errorMessage
     }
     
-    private func validateSchool() {
-        let result = Validator.shared.validateSchool(school)
-        schoolError = result.isValid ? nil : result.errorMessage
-    }
-    
-    private func validateGradYear() {
-        let result = Validator.shared.validateGradYear(gradYear)
-        gradYearError = result.isValid ? nil : result.errorMessage
-    }
-    
-    private func validateMonthlyGoal() {
-        let result = Validator.shared.validateMonthlyGoal(monthlyGoal)
-        monthlyGoalError = result.isValid ? nil : result.errorMessage
-    }
-    
     private func signUp() {
         isLoading = true
         errorMessage = nil
@@ -210,12 +125,9 @@ struct SignUpView: View {
         Task {
             do {
                 struct SignUpRequest: Encodable {
-                    let name: String
+                    let full_name: String // Change 'name' to 'full_name'
                     let email: String
                     let password: String
-                    let school: String
-                    let grad_year: Int
-                    let monthly_goal: Double
                 }
                 
                 struct TokenResponse: Decodable {
@@ -226,12 +138,9 @@ struct SignUpView: View {
                     endpoint: "/auth/signup",
                     method: .POST,
                     body: SignUpRequest(
-                        name: name.trimmingCharacters(in: .whitespaces),
+                        full_name: name.trimmingCharacters(in: .whitespaces),
                         email: email.trimmingCharacters(in: .whitespaces).lowercased(),
-                        password: password,
-                        school: school.trimmingCharacters(in: .whitespaces),
-                        grad_year: gradYear,
-                        monthly_goal: monthlyGoal
+                        password: password
                     )
                 )
                 
